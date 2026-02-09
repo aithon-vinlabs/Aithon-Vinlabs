@@ -239,13 +239,14 @@ code, pre {
 .navbar nav ul li a {
     color: var(--color-navy);
     display: inline-block;
-    padding: 10px 45px;
-    width: 97%;
+    padding: 10px 20px;  /* Optional: reduce padding */
+    width: auto;  /* ✅ FIXED */
     border-radius: var(--radius-sm);
     text-decoration: none;
     font-weight: 600;
     transition: all var(--transition-fast);
 }
+
 
 .navbar nav ul li a:hover {
     background-color: #223a73;
@@ -994,7 +995,7 @@ section.choose .card-grid {
 }
 
 #contact-form {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     border: 2px solid var(--color-navy-dark);
     background: var(--text-light);
     border-radius: var(--radius-sm);
@@ -1005,6 +1006,7 @@ section.choose .card-grid {
         -5px 0 5px -2px rgba(0,0,0,0.5),
         0 5px 5px -2px rgba(0,0,0,0.5),
         0 -5px 5px -2px rgba(0,0,0,0.5);
+    width: 100%;
 }
 
 .container .section-title {
@@ -1178,6 +1180,8 @@ section.choose .card-grid {
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: var(--space-md);
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .footer-links {
@@ -1201,6 +1205,39 @@ section.choose .card-grid {
     /* margin-left: 45px; */
     font-weight: 400;
     font-size: var(--p);
+}
+
+.footer .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer .contact {
+    text-decoration: none;
+    color: var(--border-dark);
+    display: inline; /* important for transform reliability */
+    transition: transform 0.3s ease;
+}
+
+.footer .contact:hover {
+    transform: translateY(-2px);
+    color: var(--text-secondary);
+}
+
+.footer .contact.gmail {
+    color: #f44336;
+}
+
+.footer .contact.gmail:hover {
+    color: #f44336d8;
+}
+
+
+.footer i {
+    margin-top: 20px;
+    font-size: var(--font-h1);
 }
 
 /* ============================================
@@ -1341,6 +1378,9 @@ section.choose .card-grid {
         text-align: left;
         margin-left: 45px;
         font-weight: 400;
+    }
+    .footer .contacts {
+        justify-content:left;
     }
         
 }
