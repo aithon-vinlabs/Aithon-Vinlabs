@@ -8,6 +8,166 @@
     <link rel="icon" href="images/logo.png" sizes="32x46" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Form Container */
+        .contact-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        .section-title {
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Contact Wrapper */
+        .contact-wrapper {
+            display: grid;
+            /* grid-template-columns: 2fr 1fr; */
+            gap: 40px;
+            align-items: start;
+        }
+
+        @media (max-width: 968px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Form Styles */
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+            font-size: 0.95rem;
+        }
+
+        .required {
+            color: #ef4444;
+        }
+
+        .optional {
+            color: #6b7280;
+            font-weight: 400;
+            font-size: 0.85rem;
+        }
+
+        .form-input,
+        .form-textarea,
+        .form-select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus,
+        .form-select:focus {
+            border-color: #667eea;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        /* Submit Button */
+        .submit-button {
+            width: 100%;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Contact Info Sidebar */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+
+        @media (min-width: 1024px) {
+            .contact-info {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card .icon {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .info-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .info-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -542,8 +702,7 @@
                     </div>
                     <div class="hr"></div>
                     <div class="price-button">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXa1Q1dzyloN8U1Zm2_4Xre46HpX8Z6dr0A8kHDu9OVkhRrQ/viewform?usp=publish-editor"
-                            class="basic" target="_blank">Book Your Slot</a>
+                        <a href="https://forms.gle/AAxQQpujSHiKLEr28" class="basic" target="_blank">Book Your Slot</a>
                     </div>
                 </div>
 
@@ -566,8 +725,8 @@
                     </div>
                     <div class="hr"></div>
                     <div class="price-button">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXa1Q1dzyloN8U1Zm2_4Xre46HpX8Z6dr0A8kHDu9OVkhRrQ/viewform?usp=publish-editor"
-                            class="standard" target="_blank">Book Your Slot</a>
+                        <a href="https://forms.gle/AAxQQpujSHiKLEr28" class="standard" target="_blank">Book Your
+                            Slot</a>
                     </div>
                 </div>
 
@@ -589,8 +748,7 @@
                     </div>
                     <div class="hr"></div>
                     <div class="price-button">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXa1Q1dzyloN8U1Zm2_4Xre46HpX8Z6dr0A8kHDu9OVkhRrQ/viewform?usp=publish-editor"
-                            class="premium" target="_blank">Book Your Slot</a>
+                        <a href="https://forms.gle/AAxQQpujSHiKLEr28" class="premium" target="_blank">Book Your Slot</a>
                     </div>
                 </div>
             </div>
@@ -706,37 +864,114 @@
             </div>
 
             <div class="container">
-                <h3 class="section-title">Get In Touch</h3>
-                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="30aa9e7b-6634-4aa5-93db-4af190f1fd5d">
-                    <input type="hidden" name="from_name" value="TechTutorials Contact Form">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">
+                        Have a project idea? Let's discuss how we can help you bring it to life.
+                    </p>
+                </div>
 
-                    <!-- Spam Protection -->
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    <div class="form-group">
-                        <label class="form-label" for="name">Name</label>
-                        <input class="form-input" type="text" id="name" name="name" placeholder="Enter your name"
-                            required>
+                <div class="contact-wrapper">
+                    <!-- Contact Form -->
+                    <form id="contact-form" class="contact-form">
+                        <!-- Web3Forms Access Key (Hidden Field) -->
+                        <input type="hidden" name="access_key" value="f487e9aa-8426-459b-8220-cc17cadf6bdc">
+
+                        <!-- Honeypot for spam protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                Full Name <span class="required">*</span>
+                            </label>
+                            <input type="text" id="name" name="name" class="form-input"
+                                placeholder="Enter your full name" required autocomplete="name">
+                            <span id="name-error" class="field-error hidden"></span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                Email Address <span class="required">*</span>
+                            </label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="your.email@example.com" required autocomplete="email">
+                            <span id="email-error" class="field-error hidden"></span>
+                        </div>
+
+                        <!-- Phone Field (Optional) -->
+                        <div class="form-group">
+                            <label for="phone" class="form-label">
+                                Phone Number <span class="optional">(Optional)</span>
+                            </label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 9789073212"
+                                autocomplete="tel">
+                            <span id="phone-error" class="field-error hidden"></span>
+                        </div>
+
+                        <!-- Project Type (Select) -->
+                        <div class="form-group">
+                            <label for="projectType" class="form-label">
+                                Project Type <span class="required">*</span>
+                            </label>
+                            <select id="projectType" name="projectType" class="form-select" required>
+                                <option value="">Select project type...</option>
+                                <option value="final-year">Final Year Project</option>
+                                <option value="final-year">Mini-Project</option>
+                                <option value="final-year">Artifical Intelligence</option>
+                                <option value="machine-learning">Machine Learning</option>
+                                <option value="deep-learning">Deep Learning</option>
+                                <option value="computer-vision">Computer Vision</option>
+                                <option value="nlp">Natural Language Processing</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="power-bi">N8N Automation</option>
+                                <option value="power-bi">Power BI Dashboard</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span id="projectType-error" class="field-error hidden"></span>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                Project Details <span class="required">*</span>
+                            </label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6"
+                                placeholder="Please describe your project requirements, timeline, and any specific features you need..."
+                                required maxlength="1000"></textarea>
+                            <span id="message-error" class="field-error hidden"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-group">
+                            <button type="submit" class="submit-button">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </div>
+
+                        <!-- Form Response Message -->
+                        <div id="form-response" class="hidden"></div>
+                    </form>
+
+                    <!-- Contact Information (Optional Sidebar) -->
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <i class="fas fa-envelope icon"></i>
+                            <h3>Email Us</h3>
+                            <p>aithonvinlabs@gmail.com</p>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-clock icon"></i>
+                            <h3>Response Time</h3>
+                            <p>Within 24 hours</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="email">Email</label>
-                        <input class="form-input" type="email" id="email" name="email" placeholder="Enter your email"
-                            required>
-                        <span id="email-error" class="error-message hidden"></span>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="message">Message</label>
-                        <textarea class="form-textarea" id="message" name="message" placeholder="Enter your message..."
-                            required></textarea>
-                    </div>
-                    <!-- Google reCAPTCHA widget -->
-                    <!-- <div class="form-group">
-                                                <div id="recaptcha" class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
-                                            </div> -->
-                    <button type="submit" class="submit-button">Send message</button>
-                    <span id="form-response" class="error-message"></span>
-                </form>
+                </div>
             </div>
+
 
             <!-- <div class="buttons">
                 <a href="https://wa.me/919514058491" class="button whatsapp" target="_blank"
@@ -804,6 +1039,20 @@
                     build
                     real-world AI solutions with professional support.
                 </p>
+                <div class="contacts">
+                    <a class="contact github" href="https://github.com/aithon-vinlabs" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a class="contact gmail"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=aithonvinlabs@gmail.com&su=Project Inquiry"
+                        aria-label="Email us at aithonvinlabs@gmail.com" target="_blank" title="Send us an email"
+                        rel="noopener noreferrer">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    </a>
+
+                </div>
+
             </div>
 
             <!-- Right Section -->
