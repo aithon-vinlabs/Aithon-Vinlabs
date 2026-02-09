@@ -494,16 +494,5 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-
-    // ==================== CONSOLE LOG ====================
-    console.log('%c✓ Form validation and submission script loaded successfully!', 
-                'color: #10b981; font-weight: bold; font-size: 14px;');
-    console.log('%cFeatures enabled:', 'font-weight: bold; font-size: 12px;');
-    console.log('  • Real-time form validation');
-    console.log('  • Email pattern validation');
-    console.log('  • Character counter for textarea');
-    console.log('  • Smooth scroll to top with progress');
-    console.log('  • Mobile menu toggle');
-    console.log('  • Form submission with Web3Forms API');
-
 });
+
