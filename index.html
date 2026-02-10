@@ -689,6 +689,7 @@
                     <div class="plan-header">
                         <h3 class="plan-name">Basic Plan</h3>
                         <div class="plan-price"><span>₹</span> 2,500</div>
+                        <div class="hr" style="border-top: 1px solid rgba(59, 130, 246, 0.6)"></div>
                     </div>
                     <ul class="features-list">
                         <li>AI model training</li>
@@ -700,8 +701,8 @@
                         <div class="best-for-title">Best for:</div>
                         <div class="best-for-text">Students & startups with ready UI</div>
                     </div>
-                    <div class="hr"></div>
-                    <div class="price-button">
+                    <div class="hr" style="border-top: 1px solid rgba(59, 130, 246, 0.6)"></div>
+                    <div class=" price-button">
                         <a href="https://forms.gle/AAxQQpujSHiKLEr28" class="basic" target="_blank">Book Your Slot</a>
                     </div>
                 </div>
@@ -710,20 +711,21 @@
                 <div class="pricing-card standard">
                     <div class="plan-header">
                         <h3 class="plan-name">Standard Plan</h3>
-                        <div class="plan-price"><span>₹</span> 4,300</div>
+                        <div class="plan-price"><span>₹</span> 4,500</div>
+                        <div class="hr" style="border-top:  1px solid rgba(59, 130, 246, 0.8);"></div>
                     </div>
                     <ul class="features-list">
                         <li>Complete frontend</li>
                         <li>AI model training</li>
                         <li>Backend development</li>
-                        <li>API integration</li>
-                        <li>Deployment included</li>
+                        <li>Train Using Own Datasets</li>
+                        <li>Project source code pushed and maintained on GitHub</li>
                     </ul>
                     <div class="best-for">
                         <div class="best-for-title">Best for:</div>
                         <div class="best-for-text">End-to-end academic & mini projects</div>
                     </div>
-                    <div class="hr"></div>
+                    <div class="hr" style="border-top:  1px solid rgba(59, 130, 246, 0.8);"></div>
                     <div class="price-button">
                         <a href="https://forms.gle/AAxQQpujSHiKLEr28" class="standard" target="_blank">Book Your
                             Slot</a>
@@ -734,21 +736,74 @@
                 <div class="pricing-card premium">
                     <div class="plan-header">
                         <h3 class="plan-name">Premium Plan</h3>
-                        <div class="plan-price"><span>₹</span> 6,200</div>
+                        <div class="plan-price"><span>₹</span> 6,500</div>
+                        <div class="hr" style="border-top:  1px solid rgba(139, 92, 246, 0.6);"></div>
                     </div>
                     <ul class="features-list">
                         <li>Complete frontend</li>
                         <li>Core AI/ML model</li>
                         <li>Backend development</li>
                         <li>Database connectivity (MySQL / MongoDB)</li>
+                        <li>Deployment included</li>
                     </ul>
                     <div class="best-for">
                         <div class="best-for-title">Best for:</div>
                         <div class="best-for-text">Complex projects & real-time applications</div>
                     </div>
-                    <div class="hr"></div>
+                    <div class="hr" style="border-top:  1px solid rgba(139, 92, 246, 0.3);"></div>
                     <div class="price-button">
                         <a href="https://forms.gle/AAxQQpujSHiKLEr28" class="premium" target="_blank">Book Your Slot</a>
+                    </div>
+                </div>
+
+                <!-- Customization Plan -->
+                <div class="pricing-card customize">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Customization Plan</h3>
+                        <div class="hr" style="border-top:  1px solid rgba(59, 130, 246, 0.8);"></div>
+                    </div>
+                    <ul class="features-list">
+                        <li>Complete frontend (₹ 1500)</li>
+                        <li>Backend development (₹ 1500)</li>
+                        <li>Database connectivity (local) (₹ 1000)</li>
+                        <li>Streamlit (Without backend and backend) (₹ 2000)</li>
+                        <li>Project source code pushed and maintained on GitHub</li>
+                        <li>Model Based on your requirements (₹ 1000 - 1500)</li>
+                    </ul>
+                    <div class="best-for">
+                        <div class="best-for-title">Best for:</div>
+                        <div class="best-for-text">Choose your Own Plan</div>
+                    </div>
+                    <div class="hr" style="border-top:  1px solid rgba(59, 130, 246, 0.8);"></div>
+                    <div class="price-button">
+                        <a href="https://forms.gle/AAxQQpujSHiKLEr28" class="customize" target="_blank">Book Your
+                            Slot</a>
+                    </div>
+                </div>
+
+                <!-- Power Bi Plan -->
+                <div class="pricing-card power-bi">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Power BI</h3>
+                        <div class="plan-price"><span>₹</span> 5000</div>
+                        <div class="hr" style="border-top:  1px solid rgb(146, 50, 50);"></div>
+                    </div>
+
+                    <ul class="features-list">
+                        <li>Data ingestion from multiple sources</li>
+                        <li>Power Query data cleaning & transformation</li>
+                        <li>Star-schema data modeling</li>
+                        <li>DAX measures & KPI calculations</li>
+                        <li>Interactive dashboards with slicers</li>
+                        <li>Drill-down & drill-through analysis</li>
+                        <li>Performance optimization</li>
+                        <li>Published to Power BI Service</li>
+                    </ul>
+
+                    <div class="hr" style="border-top:  1px solid rgb(146, 50, 50);"></div>
+                    <div class="price-button">
+                        <a href="https://forms.gle/AAxQQpujSHiKLEr28" class="power-bi" target="_blank">Book Your
+                            Slot</a>
                     </div>
                 </div>
             </div>
@@ -905,7 +960,7 @@
                             <label for="phone" class="form-label">
                                 Phone Number <span class="optional">(Optional)</span>
                             </label>
-                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 9789073212"
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 9514058491"
                                 autocomplete="tel">
                             <span id="phone-error" class="field-error hidden"></span>
                         </div>
@@ -1017,7 +1072,7 @@
                               a 15.9155 15.9155 0 0 1 0 31.831
                               a 15.9155 15.9155 0 0 1 0 -31.831" />
             <span class="arrow-overlay">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
                 </svg>
@@ -1035,7 +1090,8 @@
                     </div>
                 </div>
                 <p class="footer-description">
-                    We provide end-to-end AI & Machine Learning projects. We help students, engineers, and startups
+                    We provide end-to-end AI & Machine Learning projects and Other projects. We help students,
+                    engineers, and startups
                     build
                     real-world AI solutions with professional support.
                 </p>
