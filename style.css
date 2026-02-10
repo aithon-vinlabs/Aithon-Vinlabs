@@ -345,7 +345,7 @@ section h2 {
     color: var(--border-dark);
 }
 
-.description {
+.description, strong {
     margin-bottom: 40px;
     color: var(--text-secondary);
     padding: 5px;
@@ -809,6 +809,8 @@ section.home .card-grid {
     backdrop-filter: blur(10px);
     transition: all var(--transition-normal);
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing-card:hover {
@@ -824,12 +826,22 @@ section.home .card-grid {
 
 .pricing-card.standard {
     background: #154c79;
-    border-color: var(--color-navy-dark);
+    border-color: rgba(59, 130, 246, 0.8);
 }
 
 .pricing-card.premium {
     border-color: var(--color-purple-dark);
-    background: rgba(20, 15, 42);
+    background: rgba(20, 15, 42);;
+}
+
+.pricing-card.customize {
+    border: 1px solid var(--color-navy);
+    background: #090f57f5;
+}
+
+.pricing-card.power-bi {
+    border: 1px solid red;
+    background: #76153C;
 }
 
 .pricing-card.premium:hover {
@@ -889,7 +901,13 @@ section.home .card-grid {
     border: 1px solid rgba(59, 130, 246, 0.3);
     border-radius: var(--radius-md);
     padding: 12px 14px;
-    margin-top: var(--space-md);
+}
+
+.standard .best-for  {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.8);
+    border-radius: var(--radius-md);
+    padding: 12px 14px;
 }
 
 .premium .best-for {
@@ -907,6 +925,10 @@ section.home .card-grid {
     color: var(--color-purple);
 }
 
+.customize .best-for-title {
+    color: #6973e2;
+}
+
 .best-for-text {
     color: #cbd5e1;
     line-height: 1.5;
@@ -918,7 +940,8 @@ section.home .card-grid {
 }
 
 .pricing-card .price-button {
-    margin-top: 30px;
+    margin-top: auto;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -955,7 +978,19 @@ section.home .card-grid {
     border: 1px solid var(--color-purple);
 }
 
-.pricing-card .price-button .premium:hover {
+.pricing-card .price-button .customize {
+    background: var(--color-navy);
+    border: 1px solid black;
+}
+
+.pricing-card .price-button .power-bi {
+    background: #5A0E24;
+    border: 1px solid rgb(146, 50, 50);
+}
+
+.pricing-card .price-button .premium:hover,
+.pricing-card .price-button .customize:hover,
+.pricing-card .price-button .power-bi:hover {
     background-color: transparent;
 }
 
