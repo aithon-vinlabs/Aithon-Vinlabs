@@ -29,14 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ==================== SCROLL TO TOP WITH PROGRESS ====================
+    // --- Scroll to top with progress indicator ---
     const scrollBtn = document.getElementById("scrollUpBtn");
-
     if (scrollBtn) {
         const circle = scrollBtn.querySelector(".progress-circle .progress");
-        const circumference = 2 * Math.PI * 15.9155; // Circle radius
+        // The radius of the circle in the SVG is 15.9155.
+        const circumference = 2 * Math.PI * 15.9155;
 
         if (circle) {
+            // Set initial dash array and offset
             circle.style.strokeDasharray = `${circumference}`;
             circle.style.strokeDashoffset = `${circumference}`;
         }
@@ -46,15 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
             const scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
 
-            // Update progress circle
+            // Animate progress circle
             if (circle) {
                 const offset = circumference * (1 - scrollPercent);
                 circle.style.strokeDashoffset = offset;
             }
 
-            // Show/hide button with fade effect
-            scrollBtn.style.opacity = scrollTop > 100 ? "1" : "0";
-            scrollBtn.style.pointerEvents = scrollTop > 100 ? "auto" : "none";
+            // Show/hide button
+            scrollBtn.style.display = scrollTop > 100 ? "block" : "none";
         });
 
         scrollBtn.addEventListener("click", () => {
@@ -495,4 +495,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
