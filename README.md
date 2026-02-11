@@ -116,6 +116,9 @@ Fast delivery without compromising on quality or originality. We understand acad
 - SQL/Excel data integration
 - Performance optimization
 
+### 9️⃣ N8N Workflow Automation Projects 🔥
+**Intelligent automation that saves time and eliminates repetitive tasks**
+
 ---
 
 ## 🛠️ Technology Stack
