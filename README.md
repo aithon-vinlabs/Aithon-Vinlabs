@@ -4,7 +4,7 @@
 
 [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://aithonvinlabs.netlify.app/)
 [![Email](https://img.shields.io/badge/Email-Contact-blue)](mailto:aithonvinlabs@gmail.com)
-[![Status](https://img.shields.io/badge/Status-Accepting_Projects-success)]()
+[![Status](https://img.shields.io/badge/Status-Accepting_Projects-success)](.github/ISSUE_TEMPLATE/project-request.md)
 
 > Real-time AI & Machine Learning project development for students, final-year engineers, and startups. From concept to deployment, we make it happen.
 
