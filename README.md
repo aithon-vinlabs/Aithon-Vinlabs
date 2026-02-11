@@ -43,7 +43,7 @@ Deploy ML models as web applications using:
 - **Flask** / **FastAPI** for REST APIs
 - Interactive user interfaces
 - Real-time prediction capabilities
-- Cloud deployment (AWS, Heroku, Netlify)
+- Cloud deployment (AWS, Netlify)
 
 ### 🎓 Mini Projects for 2nd & 3rd Year
 Smaller-scale AI/ML projects suitable for intermediate-level coursework and academic requirements.
