@@ -5,6 +5,7 @@
 **Professional AI & Machine Learning Project Development Services**
 
 [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://aithonvinlabs.netlify.app/)
+[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://aithonvinlabs.pages.dev/)
 [![Email](https://img.shields.io/badge/Email-Contact-blue)](mailto:aithonvinlabs@gmail.com)
 [![Status](https://img.shields.io/badge/Status-Accepting_Projects-success)](.github/ISSUE_TEMPLATE/project-request.md)
 
