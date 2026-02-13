@@ -1269,10 +1269,23 @@ section.choose .card-grid {
     color: #f44336d8;
 }
 
-
 .footer i {
     margin-top: 20px;
     font-size: var(--font-h1);
+}
+
+.ad-container {
+    margin: 40px 0;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adsbygoogle {
+    display: block;
+    min-width: 300px;
+    max-width: 100%;
 }
 
 /* ============================================
@@ -1526,3 +1539,4 @@ select:focus {
     outline: 2px solid var(--color-blue-accent);
     outline-offset: 2px;
 }
+
