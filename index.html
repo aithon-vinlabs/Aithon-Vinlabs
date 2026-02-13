@@ -301,6 +301,20 @@
         }
     </style>
 
+   <!-- Console Warning Filter (Development Only) -->
+    <script>
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        const originalWarn = console.warn;
+        console.warn = function(...args) {
+            const msg = args.join(' ');
+            if (msg.includes('Protected Audience API') || msg.includes('__show_ads_impl')) {
+                return;
+            }
+            originalWarn.apply(console, args);
+        };
+    }
+    </script>
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4159370859254100"
      crossorigin="anonymous"></script>
 </head>
@@ -1328,6 +1342,7 @@
 </body>
 
 </html>
+
 
 
 
